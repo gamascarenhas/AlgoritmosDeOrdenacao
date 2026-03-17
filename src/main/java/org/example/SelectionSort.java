@@ -1,7 +1,6 @@
 package org.example;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class SelectionSort {
     public static void ordenar(int[] vetor) {

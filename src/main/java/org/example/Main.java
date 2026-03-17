@@ -22,9 +22,11 @@ public class Main {
 
         // System.out.println("Vetor Inicial: " + Arrays.toString(vetor));
 
+        int[] vetorParaInsertion = vetor.clone();
         int[] vetorParaSelection = vetor.clone();
         int[] vetorParaBubble = vetor.clone();
 
+        InsertionSort.ordenar(vetorParaInsertion);
         SelectionSort.ordenar(vetorParaSelection);
         BubbleSort.ordenar(vetorParaBubble);
 
