@@ -32,6 +32,7 @@ Se quiser visualizar também o **vetor final já organizado**, basta remover o c
 // System.out.println("Vetor Organizado (Insertion): " + Arrays.toString(vetor));
 // System.out.println("Vetor Organizado (Selection): " + Arrays.toString(vetor));
 // System.out.println("Vetor Organizado (Bubble): " + Arrays.toString(vetor));
+// System.out.println("Vetor Organizado (Shell): " + Arrays.toString(vetor));
 ```
 
 Essas linhas estão **em suas respectivas classes de ordenação**.
