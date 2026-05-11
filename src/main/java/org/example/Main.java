@@ -22,15 +22,21 @@ public class Main {
 
         // System.out.println("Vetor Inicial: " + Arrays.toString(vetor));
 
-        int[] vetorParaInsertion = vetor.clone();
+        int[] vetorParaBubble    = vetor.clone();
         int[] vetorParaSelection = vetor.clone();
-        int[] vetorParaBubble = vetor.clone();
-        int[] vetorParaShell = vetor.clone();
+        int[] vetorParaInsertion = vetor.clone();
+        int[] vetorParaShell     = vetor.clone();
+        int[] vetorParaHeap      = vetor.clone();
+        int[] vetorParaMerge     = vetor.clone();
+        int[] vetorParaQuick     = vetor.clone();
 
-        InsertionSort.ordenar(vetorParaInsertion);
-        SelectionSort.ordenar(vetorParaSelection);
         BubbleSort.ordenar(vetorParaBubble);
+        SelectionSort.ordenar(vetorParaSelection);
+        InsertionSort.ordenar(vetorParaInsertion);
         ShellSort.ordenar(vetorParaShell);
+        HeapSort.ordenar(vetorParaHeap);
+        MergeSort.ordenar(vetorParaMerge);
+        QuickSort.ordenar(vetorParaQuick);
 
     }
 }
