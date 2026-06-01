@@ -1,6 +1,6 @@
 package org.example;
 
-import java.util.Arrays;
+import org.example.Algoritmos.*;
 import java.util.Random;
 
 public class Main {
@@ -29,6 +29,9 @@ public class Main {
         int[] vetorParaHeap      = vetor.clone();
         int[] vetorParaMerge     = vetor.clone();
         int[] vetorParaQuick     = vetor.clone();
+        int[] vetorParaTim       = vetor.clone();
+        int[] vetorParaBucket    = vetor.clone();
+        int[] vetorParaRadix     = vetor.clone();
 
         BubbleSort.ordenar(vetorParaBubble);
         SelectionSort.ordenar(vetorParaSelection);
@@ -37,6 +40,8 @@ public class Main {
         HeapSort.ordenar(vetorParaHeap);
         MergeSort.ordenar(vetorParaMerge);
         QuickSort.ordenar(vetorParaQuick);
-
+        TimSort.ordenar(vetorParaTim);
+        BucketSort.ordenar(vetorParaBucket);
+        RadixSort.ordenar(vetorParaRadix);
     }
 }

@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Arrays;
+package org.example.Algoritmos;
 
 public class InsertionSort {
     public static void ordenar(int[] vetor) {
@@ -9,13 +7,17 @@ public class InsertionSort {
         long tempoInicio = System.currentTimeMillis();
 
         for (int i = 1; i < vetor.length; i++) {
+            // guarda o elemento atual que será inserido na posição correta
             int aux = vetor[i];
             int j;
 
-            for (j = i - 1; j >=0 && aux < vetor[j]; j--) {
+            // desloca para a direita todos os elementos maiores que aux
+            for (j = i - 1; j >= 0 && aux < vetor[j]; j--) {
                 vetor[j + 1] = vetor[j];
-                contador ++;
+                contador++;
             }
+
+            // insere aux na posição correta encontrada
             vetor[j + 1] = aux;
         }
 

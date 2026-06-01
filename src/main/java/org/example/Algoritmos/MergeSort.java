@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Algoritmos;
 
 public class MergeSort {
     public static void ordenar(int[] vetor) {

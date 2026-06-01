@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Arrays;
+package org.example.Algoritmos;
 
 public class BubbleSort {
     public static void ordenar(int[] vetor) {
@@ -12,6 +10,7 @@ public class BubbleSort {
             boolean trocou = true;
 
             for (int j = 0; j < (vetor.length - 1); j++) {
+                // se o elemento atual for maior que o próximo, troca os dois de lugar
                 if (vetor[j] > vetor[j + 1]) {
                     int aux = vetor[j];
                     vetor[j] = vetor[j + 1];
@@ -20,6 +19,8 @@ public class BubbleSort {
                     contador++;
                 }
             }
+
+            // se nenhuma troca ocorreu na passagem, o vetor já está ordenado
             if (trocou) {
                 break;
             }

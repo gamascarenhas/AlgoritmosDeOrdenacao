@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Algoritmos;
 
 public class HeapSort {
     public static void ordenar(int[] vetor) {
